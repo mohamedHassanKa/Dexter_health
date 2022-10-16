@@ -1,16 +1,20 @@
-# dexter_health_ass
+this project architecture is based on my own flutter architecture design [online documentation]([https://docs.flutter.dev/](https://github.com/mohamedHassanKa/Flutter_archi)),
 
-A new Flutter project.
 
-## Getting Started
+# Flutter Template
+This is the flutter assignment for dexter_health template description:
+## Setup Directories 
+This architecture divided into five principal folders 
 
-This project is a starting point for a Flutter application.
+### Core/providers
+The providers folder contains our providers to connect the UI and application logic .
+In fact, It’s a state management helper that contains some data and notifies observers when a change occurs.
+Besides, 
 
-A few resources to get you started if this is your first Flutter project:
+### Core/services
+The Services folder contains the classes that make external calls, then transfer the obtained results to providers classes.
+### Core/models
+The models folder holds classes that represent data and functionality. 
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
-
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+### ui
+The ui folder houses all the code for building screens.
